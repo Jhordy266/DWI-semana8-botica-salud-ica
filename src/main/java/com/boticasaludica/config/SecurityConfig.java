@@ -15,12 +15,6 @@ public class SecurityConfig {
         return new BCryptPasswordEncoder();
     }
 
-    /*
-     * En ISSUE-01 todavía no se implementa el inicio de sesión.
-     * Se permite el acceso para evitar el usuario temporal generado por Spring Security.
-     * La autenticación, roles, permisos y tiempos de sesión se implementarán
-     * en las issues correspondientes.
-     */
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
